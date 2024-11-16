@@ -1,0 +1,24 @@
+@import url('header.css');
+@import url('main.css');
+
+:root {
+    --azul: #007BFF;
+    --branco: #fff;
+    --cinza: #6c757d;
+    --cinza-claro: #f5f5f5;
+    --preto: #000;
+    --verde: #28a745;
+    --vermelho: #dc3545;
+}
+
+table {
+    border-collapse: collapse;
+    width: auto;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+    width: auto;
+}

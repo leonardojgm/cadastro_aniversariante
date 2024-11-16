@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meus Aniversários</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Meus Aniversários</h1>
+        </header>
+        <main>
+            <form class="form js-form">
+                <input  class="form-field js-field" 
+                    id="id"
+                    name="id"
+                    type="hidden">
+                <label for="name">
+                    <span>Nome da Pessoa (<span class="required">campo obrigatório</span>)</span>
+                    <input class="form-field js-field" 
+                        id="name" 
+                        name="name" 
+                        type="text" 
+                        minlength="3" 
+                        maxlength="120" 
+                        pattern="^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$" 
+                        required>
+                </label>
+                <label for="birth-date">
+                    <span>Data de nascimento (<span class="required">campo obrigatório</span>)</span>
+                    <input class="form-field js-field" 
+                        id="birth-date" 
+                        type="date" 
+                        name="birth-date" 
+                        required>
+                </label>
+                <div class="form-actions">
+                    <button type="submit">Salvar</button>
+                </div>
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Data de Nascimento</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody class="js-table">
+                </tbody>
+            </table>
+        </main>
+        <script src="js/script.js"></script>
+    </body>
+</html>

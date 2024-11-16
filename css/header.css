@@ -1,0 +1,7 @@
+header {
+    background-color: var(--azul);
+    color: var(--branco);
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+}
